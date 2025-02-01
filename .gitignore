@@ -1,0 +1,30 @@
+# Ignore build output
+/build/
+
+# Ignore ESP-IDF toolchain and sdkconfig
+.esp-idf/
+sdkconfig*
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore system files (e.g., macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore all binaries and object files
+*.bin
+*.elf
+*.map
+*.a
+*.o
+
+# Ignore dependency directories
+components/*
+!components/.gitignore
