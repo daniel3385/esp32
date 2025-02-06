@@ -1,0 +1,34 @@
+menu "My Custom Menu"
+
+config MY_BOOL
+    bool "Choose yes or no"
+
+config MY_STRING
+    string "Enter a string"
+    default "Hello Daniel"
+        help
+            This string will be available as #define in the C code
+
+config MY_INT
+    int "in int"
+    range 1 10
+        help
+            Enter a number from 1 to 10
+
+config MY_CHOICE
+    choice 
+        bool "Select an option"
+        default OPTION_1
+
+        config OPTION_1
+            bool "This is option 1"
+
+        config OPTION_2
+            bool "This is option 2"
+
+        config OPTION_3
+            bool "This is option 3"
+        
+    endchoice
+
+endmenu
